@@ -61,7 +61,7 @@ const IntroSection = () => {
           <div className="relative w-28 h-28 sm:w-36 sm:h-36 shrink-0 rounded-3xl overflow-hidden p-1 bg-gradient-to-tr from-cyan-400 via-indigo-500 to-pink-500 shadow-2xl shadow-cyan-500/20">
             <div className="relative w-full h-full rounded-[20px] overflow-hidden bg-slate-900">
               <Image
-                src="/aaradhya_avatar.jpg"
+                src="/aaradhya_profile.jpg"
                 alt="Aaradhya Bajpai"
                 fill
                 priority

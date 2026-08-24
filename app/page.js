@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <ModeProvider value={{ darkMode, toggleDarkMode }}>
       <div className={`min-h-screen ${darkMode ? 'bg-slate-950 text-slate-100' : 'bg-slate-50 text-slate-900'}`}>
-        <Sidenav profilePicUrl="/aaradhya_avatar.jpg" />
+        <Sidenav profilePicUrl="/aaradhya_profile.jpg" />
 
         <main className="w-full">
           <IntroSection />

@@ -65,8 +65,8 @@ A modern, responsive portfolio website built with **Next.js 14**, **React 18**, 
 
 1. **Clone the repository**:
    ```bash
-   git clone https://github.com/aaradhya1077/Devdeeppportfolio-main.git
-   cd Devdeeppportfolio-main
+   git clone https://github.com/aaradhya1077/portfolio.git
+   cd portfolio
    ```
 
 2. **Install dependencies**:

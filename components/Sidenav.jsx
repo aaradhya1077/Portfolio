@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { useMode } from '@/context/mode';
 import { FiHome, FiUser, FiCode, FiLayers, FiAward, FiBook, FiUsers, FiMail, FiGithub, FiSun, FiMoon } from 'react-icons/fi';
 
-const Sidebar = ({ profilePicUrl = '/aaradhya_avatar.jpg' }) => {
+const Sidebar = ({ profilePicUrl = '/aaradhya_profile.jpg' }) => {
   const [activeLink, setActiveLink] = useState('Home');
   const { darkMode, toggleDarkMode } = useMode(); 
   const [isOpen, setIsOpen] = useState(false);
