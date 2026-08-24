@@ -91,10 +91,10 @@ const EducationSection = () => {
                 </p>
               </div>
 
-              <div className={`flex flex-col gap-1.5 text-xs text-right border-t md:border-t-0 md:border-l pt-4 md:pt-0 md:pl-6 border-slate-800/40 shrink-0 ${
+              <div className={`flex flex-col gap-1.5 text-xs text-left md:text-right border-t md:border-t-0 md:border-l pt-4 md:pt-0 md:pl-6 border-slate-800/40 shrink-0 ${
                 darkMode ? 'text-slate-400' : 'text-slate-500'
               }`}>
-                <div className="flex items-center gap-1.5 justify-end">
+                <div className="flex items-center gap-1.5 justify-start md:justify-end">
                   <FiMapPin className="text-cyan-400" />
                   <span>{item.location}</span>
                 </div>

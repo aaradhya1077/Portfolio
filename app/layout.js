@@ -12,6 +12,13 @@ export const metadata = {
   description: "Portfolio of Aaradhya Bajpai - M.Tech AI & Data Science student, Generative AI & Deep Learning Developer.",
 };
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: "#020617",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

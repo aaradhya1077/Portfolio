@@ -95,7 +95,7 @@ const Projects = () => {
               }`}
             >
               {/* Top Banner Image Container */}
-              <div className="relative w-full h-64 sm:h-80 md:h-96 overflow-hidden bg-slate-950">
+              <div className="relative w-full h-72 sm:h-80 md:h-96 overflow-hidden bg-slate-950">
                 <Image
                   src={project.banner}
                   alt={project.title}
@@ -104,17 +104,17 @@ const Projects = () => {
                   priority={idx === 0}
                   className="object-cover object-top transition-transform duration-500 hover:scale-105"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
+                <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-slate-950/20" />
                 
-                <div className="absolute bottom-6 left-6 right-6 flex flex-wrap items-end justify-between gap-4">
+                <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-3">
                   <div>
-                    <span className="text-xs font-semibold px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md inline-block mb-2">
+                    <span className="text-[11px] sm:text-xs font-semibold px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-cyan-500/20 text-cyan-300 border border-cyan-500/30 backdrop-blur-md inline-block mb-1.5">
                       Featured Project #{idx + 1}
                     </span>
-                    <h3 className="text-2xl sm:text-4xl font-extrabold text-white tracking-tight">
+                    <h3 className="text-xl sm:text-3xl md:text-4xl font-extrabold text-white tracking-tight leading-tight">
                       {project.title}
                     </h3>
-                    <p className="text-slate-300 text-sm font-medium mt-1">
+                    <p className="text-slate-300 text-xs sm:text-sm font-medium mt-1 line-clamp-2">
                       {project.subtitle}
                     </p>
                   </div>
@@ -123,9 +123,9 @@ const Projects = () => {
                     href={project.repo}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="px-4 py-2 rounded-xl bg-slate-900/90 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 font-semibold text-xs flex items-center gap-2 backdrop-blur-md transition-all duration-200 shrink-0"
+                    className="px-3.5 py-2 rounded-xl bg-slate-900/90 hover:bg-cyan-500 text-white hover:text-slate-950 border border-slate-700 font-semibold text-xs flex items-center gap-2 backdrop-blur-md transition-all duration-200 shrink-0 self-start sm:self-auto"
                   >
-                    <FiGithub className="text-base" />
+                    <FiGithub className="text-sm" />
                     <span>View Repository</span>
                   </a>
                 </div>

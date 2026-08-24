@@ -123,12 +123,12 @@ const SkillsSection = () => {
         </div>
 
         {/* Tab Filter */}
-        <div className="flex flex-wrap justify-center gap-2 mb-10">
+        <div className="flex flex-nowrap sm:flex-wrap items-center justify-start sm:justify-center gap-2 mb-10 overflow-x-auto no-scrollbar pb-2 px-1 max-w-full">
           {categories.map((cat) => (
             <button
               key={cat.id}
               onClick={() => setActiveTab(cat.id)}
-              className={`px-4 py-2 rounded-xl text-xs font-semibold transition-all duration-200 ${
+              className={`px-4 py-2 rounded-xl text-xs font-semibold shrink-0 transition-all duration-200 ${
                 activeTab === cat.id
                   ? 'bg-cyan-500 text-slate-950 shadow-md shadow-cyan-500/20'
                   : darkMode 

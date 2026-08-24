@@ -82,7 +82,7 @@ const Sidebar = ({ profilePicUrl = '/aaradhya_profile.jpg' }) => {
       )}
 
       {/* Sidebar - Desktop & Mobile Drawer */}
-      <aside className={`fixed top-0 bottom-0 left-0 z-50 w-64 transition-transform duration-300 ease-in-out flex flex-col justify-between p-5 border-r ${
+      <aside className={`fixed top-0 bottom-0 left-0 z-50 w-64 overflow-y-auto transition-transform duration-300 ease-in-out flex flex-col justify-between p-5 border-r ${
         isOpen ? 'translate-x-0' : '-translate-x-full md:translate-x-0'
       } ${
         darkMode 
